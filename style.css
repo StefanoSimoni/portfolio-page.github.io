@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    /*background: url(5651992.png);*/
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding-top: 30px;
+}
+
+.about-me-img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 8px black;
+}
+
+.about-me-img > img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.about-me-img > p {
+    position: absolute;
+    top: 170px;
+    left: 32px;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+    color: white;
+    font-weight: bold;
+}
+
+.about-me-content {
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 15px 0 15px;
+    box-shadow: 1px 1px 8px black;
+}
+
+.about-me-content > h1 {
+    font-size: 25px;
+}
+
+.about-me-content > p {
+    font-size: 12px;
+}
+
+.about-me-content > h1, .about-me-content > p, .about-me-content > .about-me-links {
+    margin-bottom: 15px;
+}
+
+.about-me-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.about-me-links a {
+    color: black;
+}
+
+.my-work {
+    margin-top: 100px;
+    width: 90%;
+}
+
+.my-work > h1 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.works {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 43px;
+}
+
+.work {
+    background-color: white;
+    box-shadow: 0.5px 0.5px 5px black;
+}
+
+.work > img {
+    width: 100%;
+    height: 250px;
+}
+
+.work-text {
+    padding: 5px 15px 20px 15px;
+}
+
+.work-text > p {
+    font-size: 13px;
+}
+
+.work-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.work-links {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.work-links a {
+    color: black;
+}
+
+.contact-me {
+    width: 100%;
+    background-color: rgb(37, 37, 139);
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contact-me-content {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-me-text {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    gap: 20px;
+    color: white;
+}
+
+.contact-me-text > h1 {
+    font-size: 25px;
+}
+
+.contact-me-text > div {
+    display: flex;
+    gap: 10px;
+}
+
+.tel > i, .email > i {
+    font-size: 20px;
+}
+
+.contact-me-links {
+    font-size: 30px;
+}
+
+.contact-me-links a {
+    color: white;
+}
